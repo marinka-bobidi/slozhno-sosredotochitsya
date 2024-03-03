@@ -1,12 +1,25 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: var(--bg-image_dark, #100538);
+  --bg-color: var(--bg-color_dark, #000028);
+  --title-color: var(--title-color_dark, #db00ff);
+  --shadow-color: var(--shadow-color_dark, #ff0070);
+  --acent-color: var(--acent-color_dark, #ff0070);
+  --text-color: var(--text-color_dark, #f1b2ce);
+  --titel-text_color: var(--titel-text_color_dark, #000028);
+  --menu_color: var(--menu_color_dark, #ff0070);
+  --title-decor_color: var(--title-decor_color_bark, #ff0070);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: var(--bg-image_dark, #100538);
+    --bg-color: var(--bg-color_dark, #000028);
+    --title-color: var(--title-color_dark, #db00ff);
+    --shadow-color: var(--shadow-color_dark, #ff0070);
+    --acent-color: var(--acent-color_dark, #ff0070);
+    --text-color: var(--text-color_dark, #f1b2ce);
+    --titel-text_color: var(--titel-text_color_dark, #000028);
+    --menu_color: var(--menu_color_dark, #ff0070);
+    --title-decor_color: var(--title-decor_color_dark, #ff0070);
+  }
 }

@@ -1,12 +1,25 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: var(--bg-image_light, #fff1f7);
+  --bg-color: var(--bg-color_light, #fff1f7);
+  --title-color: var(--title-color_light, #ffc2e6);
+  --shadow-color: var(--shadow-color_light, #ff0070);
+  --acent-color: var(--acent-color_light, #ff8dcb);
+  --text-color: var(--text-color_light, #353430);
+  --titel-text_color: var(--titel-text_color_light, #000028);
+  --menu_color: var(--menu_color_light, #353430);
+  --title-decor_color: var(--title-decor_color_light, #353430);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: var(--bg-image_light, #fff1f7);
+    --bg-color: var(--bg-color_light, #fff1f7);
+    --title-color: var(--title-color_light, #ffc2e6);
+    --shadow-color: var(--shadow-color_light, #ff0070);
+    --acent-color: var(--acent-color_light, #ff8dcb);
+    --text-color: var(--text-color_light, #353430);
+    --titel-text_color: var(--titel-text_color_light, #000028);
+    --menu_color: var(--menu_color_light, #353430);
+    --title-decor_color: var(--title-decor_color_light, #353430);
+  }
 }
