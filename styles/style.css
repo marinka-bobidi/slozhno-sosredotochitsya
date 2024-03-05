@@ -6,12 +6,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 10px;
+  padding-inline: 20px;
 }
 
-@media (768px < width <= 1024px) {
+@media (width >= 1024px) {
   .page {
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -21,6 +21,7 @@
   min-block-size: 100vh;
   justify-items: end;
   align-items: start;
+  position: relative;
 }
 
 .header::after {
@@ -69,7 +70,7 @@
   font-family: var(--main-font, sans-serif);
   color: var(--acent-color, #ff0070);
   display: flex;
-  gap: 14px;
+  gap: 13px;
 }
 
 .header__theme-menu {
@@ -84,7 +85,7 @@
 
 @media (width < 1024px) {
   .header__theme-menu .header__theme-menu-list {
-    margin-block-start: 65px;
+    margin-block-start: 192px;
     flex-direction: column;
   }
 }
@@ -100,7 +101,6 @@
 
 .header__title {
   justify-self: start;
-  margin-block-start: -20px;
   margin-inline-start: -20px;
 }
 
@@ -115,7 +115,7 @@
   background-color: var(--acent-color, #ff8dcb);
   font-weight: 700;
   font-size: 18px;
-  margin-block-start: -35px;
+  margin-block-start: -20px;
   align-self: center;
   max-inline-size: 364px;
   color: var(--titel-text_color, #000028);
@@ -145,7 +145,7 @@
 .main {
   display: grid;
   gap: 80px;
-  padding: 60px 20px;
+  padding-block: 40px;
 }
 
 @media (width < 768px) {
@@ -165,12 +165,12 @@
 .main__section-content {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .main__section-text {
   font-weight: 400;
-  line-height: 23px;
-  margin-block-start: 10px;
+  line-height: 23.4px;
 }
 
 .section__list-item {
@@ -203,6 +203,11 @@
   }
 }
 
+.resons__list {
+  display: grid;
+  gap: 20px;
+}
+
 @media (width >= 1024px) {
   .resons__list {
     display: grid;
@@ -222,6 +227,11 @@
   .factors {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.factors__list {
+  display: grid;
+  gap: 20px;
 }
 
 @media (width >= 1024px) {
@@ -258,6 +268,11 @@
   }
 }
 
+.adviсe__list {
+  display: grid;
+  gap: 20px;
+}
+
 @media (width >= 1024px) {
   .adviсe__list {
     display: grid;
@@ -274,7 +289,7 @@
 }
 
 .main__section-title-under {
-  margin-block-end: 20px;
+  margin-block-end: 10px;
 }
 
 .gallery .main__section-title {
@@ -296,9 +311,12 @@
   }
 }
 
+.gallery__list {
+  margin-block-start: 20px;
+}
+
 .gallery__list-item {
   list-style: none;
-  margin-block-start: 20px;
 }
 
 .gallery__list-item:nth-of-type(1),
@@ -316,6 +334,10 @@
   block-size: 100%;
   inline-size: 100%;
   object-fit: cover;
+}
+.gallery__picture {
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .footer {
