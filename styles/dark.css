@@ -7,7 +7,8 @@
   --text-color: var(--text-color_dark, #f1b2ce);
   --titel-text_color: var(--titel-text_color_dark, #000028);
   --menu_color: var(--menu_color_dark, #ff0070);
-  --title-decor_color: var(--title-decor_color_bark, #ff0070);
+  --title-decor_color: var(--title-decor_color_dark, #ff0070);
+  --rec_color: var(--rec_color_dark, #ff0070);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,5 +22,6 @@
     --titel-text_color: var(--titel-text_color_dark, #000028);
     --menu_color: var(--menu_color_dark, #ff0070);
     --title-decor_color: var(--title-decor_color_dark, #ff0070);
+    --rec_color: var(--rec_color_dark, #ff0070);
   }
 }

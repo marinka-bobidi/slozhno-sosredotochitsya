@@ -8,6 +8,7 @@
   --titel-text_color: var(--titel-text_color_light, #000028);
   --menu_color: var(--menu_color_light, #353430);
   --title-decor_color: var(--title-decor_color_light, #353430);
+  --rec_color: var(--rec_color_ligh, #fff1f7);
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,5 +22,6 @@
     --titel-text_color: var(--titel-text_color_light, #000028);
     --menu_color: var(--menu_color_light, #353430);
     --title-decor_color: var(--title-decor_color_light, #353430);
+    --rec_color: var(--rec_color_ligh, #fff1f7);
   }
 }
