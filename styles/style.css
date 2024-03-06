@@ -127,14 +127,8 @@
 .title-decor {
   color: var(--title-color, #ffc2e6);
   text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
-}
-
-@media (width > 768px) {
-  .title-decor {
-    font-size: (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 }
 
 .header__text {
@@ -206,7 +200,13 @@
 .main__section {
   font-size: 18px;
   display: grid;
-  gap: 20px;
+  gap: 10px;
+}
+
+@media (width <= 768px) {
+  .main__section {
+    gap: 20px;
+  }
 }
 
 .main__section-link {
@@ -319,13 +319,20 @@
 }
 
 .gallery .main__section-title {
-  margin-block-end: -20px;
+  margin-block-end: -30px;
+}
+
+@media (width>= 768px) {
+  .gallery .main__section-title {
+    margin-block-end: -20px;
+  }
 }
 
 @media (width < 768px) {
   .gallery__list {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 
