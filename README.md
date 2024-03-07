@@ -1,3 +1,3 @@
 slozhno-sosredotochitsya
 
-https://github.com/marinka-bobidi/slozhno-sosredotochitsya.git
+ссылка:https://github.com/marinka-bobidi/slozhno-sosredotochitsya.git
