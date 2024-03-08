@@ -259,6 +259,8 @@
 .main__section-title-under {
   background-color: var(--acent-color, #ff8dcb);
   font-size: 18px;
+  color: var(--titel-text_color, #000028);
+  margin-block-end: 20px;
 }
 
 .gallery {
