@@ -9,6 +9,7 @@
   --menu_color: var(--menu_color_light, #353430);
   --title-decor_color: var(--title-decor_color_light, #353430);
   --rec_color: var(--rec_color_ligh, #fff1f7);
+  --border-color: var(--border-color_light, rgba(50, 49, 45, 0.4));
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,5 +24,6 @@
     --menu_color: var(--menu_color_light, #353430);
     --title-decor_color: var(--title-decor_color_light, #353430);
     --rec_color: var(--rec_color_ligh, #fff1f7);
+    --border-color: var(--border-color_light, rgba(50, 49, 45, 0.4));
   }
 }

@@ -9,6 +9,7 @@
   --menu_color: var(--menu_color_dark, #ff0070);
   --title-decor_color: var(--title-decor_color_dark, #ff0070);
   --rec_color: var(--rec_color_dark, #ff0070);
+  --border-color: var(--border-color_dark, rgba(255, 0, 112, 0.4));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,5 +24,6 @@
     --menu_color: var(--menu_color_dark, #ff0070);
     --title-decor_color: var(--title-decor_color_dark, #ff0070);
     --rec_color: var(--rec_color_dark, #ff0070);
+    --border-color: var(--border-color_dark, rgba(255, 0, 112, 0.4));
   }
 }

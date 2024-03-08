@@ -9,6 +9,7 @@
   --menu_color_light: var(--text-color_light, #353430);
   --title-decor_color_light: var(--text-color_light, #353430);
   --rec_color_light: #fff1f7;
+  --border-color_light: rgba(50, 49, 45, 0.4);
 
   --bg-image_dark: url(../images/cover-image-dark.png);
   --bg-color_bark: #000028;
@@ -20,6 +21,7 @@
   --menu_color_light_dark: var(--acent-color_dark, #ff0070);
   --title-decor_color_dark: var(--acent-color_dark, #ff0070);
   --rec_color_dark: var(--acent-color_dark, #ff0070);
+  --border-color_dark: rgba(255, 0, 112, 0.4);
 
   --main-font: "IBM Plex Mono";
   --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
