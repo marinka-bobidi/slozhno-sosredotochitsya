@@ -1,5 +1,6 @@
 .page {
   color: var(--text-color, #353430);
+  background-color: var(--bg-color, #fff1f7);
   font-family: var(--main-font, monospace);
   background-image: var(--bg-image, #fff1f7);
   background-position: center;
